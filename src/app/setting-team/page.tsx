@@ -8,7 +8,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import MemberList from "./_components/MemberList";
 import Icon from "@/components/common/Icon";
 
@@ -37,38 +36,38 @@ export default function SettingTeam() {
   return (
     <div>
       <div className="flex-1 z-10 py-4 text-left">
-        <div className="z-10 pt-4  mt-2 grid text-center md:w-full grid-cols-2 md:grid-cols-4 md:text-left gap-4">
+        <div className="z-10 pt-4  mt-2 grid text-center md:w-full grid-cols-2 md:grid-cols-4 md:text-left gap-x-4 gap-y-8">
           <div>
-            <div className="relative rounded-lg px-4 py-2 bg-blue-100 text-left">
+            <div className="relative rounded-lg px-4 py-2 bg-blue-200 text-left">
               <span>Đội 1</span>
-              <span className="absolute text text-shadow-default text-[20px] md:text-[70px] text-blue-500 -bottom-2 right-4 drop-shadow-3xl">
+              <span className="absolute text text-shadow-default text-[20px] md:text-[70px] text-blue-500 bottom-0 md:-bottom-2 right-4 drop-shadow-3xl">
                 <Icon className="h-[50px] w-[50px]" name="ShirtOutline" />
               </span>
             </div>
             <MemberList data={data} />
           </div>
           <div>
-            <div className="relative rounded-lg px-4 py-2  bg-red-100 text-left">
+            <div className="relative rounded-lg px-4 py-2  bg-red-200 text-left">
               <span>Đội 1</span>
-              <span className="absolute text text-shadow-default text-[20px] md:text-[70px] text-red-500 -bottom-2 right-4 drop-shadow-3xl">
+              <span className="absolute text text-shadow-default text-[20px] md:text-[70px] text-red-500 bottom-0 md:-bottom-2 right-4 drop-shadow-3xl">
                 <Icon className="h-[50px] w-[50px]" name="ShirtOutline" />
               </span>
             </div>
             <MemberList data={data} />
           </div>
           <div>
-            <div className="relative rounded-lg px-4 py-2 bg-yellow-100 text-left">
+            <div className="relative rounded-lg px-4 py-2 bg-yellow-200 text-left">
               <span>Đội 1</span>
-              <span className="absolute text text-shadow-default text-[20px] md:text-[70px] text-yellow-500 -bottom-2 right-4 drop-shadow-3xl">
+              <span className="absolute text text-shadow-default text-[20px] md:text-[70px] text-yellow-500 bottom-0 md:-bottom-2 right-4 drop-shadow-3xl">
                 <Icon className="h-[50px] w-[50px]" name="ShirtOutline" />
               </span>
             </div>
             <MemberList data={data} />
           </div>
           <div>
-            <div className="relative rounded-lg px-4 py-2 bg-green-100 text-left">
+            <div className="relative rounded-lg px-4 py-2 bg-green-200 text-left">
               <span>Đội 1</span>
-              <span className="absolute text text-shadow-default text-[20px] md:text-[70px] text-green-500 -bottom-2 right-4 drop-shadow-3xl">
+              <span className="absolute text text-shadow-default text-[20px] md:text-[70px] text-green-500 bottom-0 md:-bottom-2 right-4 drop-shadow-3xl">
                 <Icon className="h-[50px] w-[50px]" name="ShirtOutline" />
               </span>
             </div>

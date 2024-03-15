@@ -31,9 +31,6 @@ export default function Home() {
             Tham gia{" "}
             <span className="absolute text text-shadow-default text-[50px] md:text-[70px] text-blue-500 -bottom-2 right-4 drop-shadow-3xl">
               23
-            </span>
-          </div>
-          <div className="relative rounded-lg px-4 py-2 md:p-4  bg-red-100 text-left">
             Xin vắng{" "}
             <span className="absolute text text-shadow-default text-[50px] md:text-[70px] text-red-500 -bottom-2 right-4 drop-shadow-3xl">
               13
