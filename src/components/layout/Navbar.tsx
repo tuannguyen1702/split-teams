@@ -14,27 +14,13 @@ import { Label } from "../ui/label";
 import MemberList from "../common/Member/MemberList";
 import { ScrollArea } from "../ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
-
-const data = [
-  {
-    name: "Album ảnh",
-    slug: "",
-  },
-  {
-    name: "Bình chọn",
-    slug: "",
-  },
-  {
-    name: "Chia sẽ",
-    slug: "",
-  },
-  {
-    name: "Thành viên",
-    slug: "",
-  },
-];
+import { useMemberStore } from "@/store/members";
 
 const Navbar = () => {
+  const { setMemberJoinMatch, memberJoinMatch, memberUnJoinMatch, memberNotYetVoted } = useMemberStore();
+
+  console.log(`memberJoinMatch`, memberJoinMatch)
+
   return (
     <div className="flex">
       {/* <ul className="hidden md:flex space-x-8">
@@ -93,85 +79,35 @@ const Navbar = () => {
                     <TabsTrigger value="account">
                       Tham gia{" "}
                       <span className="text text-shadow-default text-base text-blue-500 ml-2">
-                        23
+                        {memberJoinMatch.length}
                       </span>
                     </TabsTrigger>
                     <TabsTrigger value="password">
                       Vắng{" "}
                       <span className="text text-shadow-default text-base text-red-500 ml-2">
-                        23
+                        {memberUnJoinMatch.length}
                       </span>
                     </TabsTrigger>
                     <TabsTrigger value="password1">
                       Chưa bình chọn{" "}
                       <span className="text text-shadow-default text-base text-orange-500 ml-2">
-                        23
+                        {memberNotYetVoted.length}
                       </span>
                     </TabsTrigger>
                   </TabsList>
                   <TabsContent value="account">
-                    <ScrollArea className="vote-content vote-content-mobile">
-                      Jokester began sneaking into the castle in the middle of
-                      the night and leaving jokes all over the place: under the
-                      king's pillow, in his soup, even in the royal toilet. The
-                      king was furious, but he couldn't seem to stop Jokester.
-                      And then, one day, the people of the kingdom discovered
-                      that the jokes left by Jokester were so funny that they
-                      couldn't help but laugh. And once they started laughing,
-                      they couldn't stop. Jokester began sneaking into the
-                      castle in the middle of the night and leaving jokes all
-                      over the place: under the king's pillow, in his soup, even
-                      in the royal toilet. The king was furious, but he couldn't
-                      seem to stop Jokester. And then, one day, the people of
-                      the kingdom discovered that the jokes left by Jokester
-                      were so funny that they couldn't help but laugh. And once
-                      they started laughing, they couldn't stop.Jokester began
-                      sneaking into the castle in the middle of the night and
-                      leaving jokes all over the place: under the king's pillow,
-                      in his soup, even in the royal toilet. The king was
-                      furious, but he couldn't seem to stop Jokester. And then,
-                      one day, the people of the kingdom discovered that the
-                      jokes left by Jokester were so funny that they couldn't
-                      help but laugh. And once they started laughing, they
-                      couldn't stop.Jokester began sneaking into the castle in
-                      the middle of the night and leaving jokes all over the
-                      place: under the king's pillow, in his soup, even in the
-                      royal toilet. The king was furious, but he couldn't seem
-                      to stop Jokester. And then, one day, the people of the
-                      kingdom discovered that the jokes left by Jokester were so
-                      funny that they couldn't help but laugh. And once they
-                      started laughing, they couldn't stop.Jokester began
-                      sneaking into the castle in the middle of the night and
-                      leaving jokes all over the place: under the king's pillow,
-                      in his soup, even in the royal toilet. The king was
-                      furious, but he couldn't seem to stop Jokester. And then,
-                      one day, the people of the kingdom discovered that the
-                      jokes left by Jokester were so funny that they couldn't
-                      help but laugh. And once they started laughing, they
-                      couldn't stop.Jokester began sneaking into the castle in
-                      the middle of the night and leaving jokes all over the
-                      place: under the king's pillow, in his soup, even in the
-                      royal toilet. The king was furious, but he couldn't seem
-                      to stop Jokester. And then, one day, the people of the
-                      kingdom discovered that the jokes left by Jokester were so
-                      funny that they couldn't help but laugh. And once they
-                      started laughing, they couldn't stop.Jokester began
-                      sneaking into the castle in the middle of the night and
-                      leaving jokes all over the place: under the king's pillow,
-                      in his soup, even in the royal toilet. The king was
-                      furious, but he couldn't seem to stop Jokester. And then,
-                      one day, the people of the kingdom discovered that the
-                      jokes left by Jokester were so funny that they couldn't
-                      help but laugh. And once they started laughing, they
-                      couldn't stop.
+                    <ScrollArea className="h-[calc(100vh-120px)] -mx-4 px-4 text-start">
+                      <MemberList type="join" data={memberJoinMatch} />
                     </ScrollArea>
                   </TabsContent>
                   <TabsContent value="password">
-                    Change your password here.
+                    <ScrollArea className="h-[calc(100vh-120px)] -mx-4 px-4 text-start">
+                      <MemberList type="unJoin" data={memberUnJoinMatch} />
+                    </ScrollArea>
                   </TabsContent>
                   <TabsContent value="password1">
                     <ScrollArea className="h-[calc(100vh-120px)] -mx-4 px-4 text-start">
-                      <MemberList />
+                      <MemberList type="notYetVoted" data={memberNotYetVoted} />
                     </ScrollArea>
                   </TabsContent>
                 </Tabs>

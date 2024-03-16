@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -10,52 +12,27 @@ import {
 } from "@/components/ui/dialog";
 import MemberList from "./_components/MemberList";
 import Icon from "@/components/common/Icon";
-
-const Member = ({ name, isPlus }: { name: string; isPlus?: boolean }) => {
-  return (
-    <div className="flex rounded-sm bg-white mt-2 py-2 px-4">
-      <div className="flex-1">{name}</div>
-      <div>{isPlus ? "+" : ""}</div>
-    </div>
-  );
-};
+import { useTeamStore } from "@/store/teams";
+import MemberItem from "./_components/MemberItem";
 
 export default function SettingTeam() {
-  const data = [
-    { name: "Tuấn Nguyen", isPlus: true },
-    { name: "Tuấn Nguyen" },
-    { name: "Tuấn Nguyen" },
-    { name: "Tuấn Nguyen" },
-    { name: "Tuấn Nguyen" },
-    { name: "Tuấn Nguyen" },
-    { name: "Tuấn Nguyen" },
-    { name: "Tuấn Nguyen" },
-    { name: "Tuấn Nguyen" },
-    { name: "Tuấn Nguyen" },
-  ];
+  const {totalTeam, totalTeamMember} = useTeamStore();
+
   return (
     <div>
       <div className="flex-1 z-10 py-4 text-left">
         <div className="z-10 pt-4  mt-2 grid text-center md:w-full grid-cols-2 md:grid-cols-4 md:text-left gap-x-4 gap-y-8">
-          <div>
-            <div className="relative rounded-lg px-4 py-2 bg-blue-200 text-left">
-              <span>Đội 1</span>
-              <span className="absolute text text-shadow-default text-[20px] md:text-[70px] text-blue-500 bottom-0 md:-bottom-2 right-4 drop-shadow-3xl">
+          {Array.from(Array(totalTeam).keys()).map(team => <div>
+            <div data-team={team + 1} className="relative group rounded-lg px-4 py-2  data-[team='1']:bg-red-200 data-[team='2']:bg-blue-200 data-[team='3']:bg-yellow-200 data-[team='4']:bg-green-200 text-left">
+              <span>Đội {team + 1}</span>
+              <span className="absolute text text-shadow-default text-[20px] group-data-[team='1']:text-red-500 group-data-[team='2']:text-blue-500  group-data-[team='3']:text-yellow-500 group-data-[team='4']:text-green-500 md:text-[70px] bottom-0 md:-bottom-2 right-4 drop-shadow-3xl">
                 <Icon className="h-[50px] w-[50px]" name="ShirtOutline" />
               </span>
             </div>
-            <MemberList data={data} />
-          </div>
-          <div>
-            <div className="relative rounded-lg px-4 py-2  bg-red-200 text-left">
-              <span>Đội 1</span>
-              <span className="absolute text text-shadow-default text-[20px] md:text-[70px] text-red-500 bottom-0 md:-bottom-2 right-4 drop-shadow-3xl">
-                <Icon className="h-[50px] w-[50px]" name="ShirtOutline" />
-              </span>
-            </div>
-            <MemberList data={data} />
-          </div>
-          <div>
+            <div>{Array.from(Array(totalTeamMember).keys()).map(member => <MemberItem id={`${member + 1}`} name="" isPlus={false} />)}</div>
+          </div>)}
+          
+          {/* <div>
             <div className="relative rounded-lg px-4 py-2 bg-yellow-200 text-left">
               <span>Đội 1</span>
               <span className="absolute text text-shadow-default text-[20px] md:text-[70px] text-yellow-500 bottom-0 md:-bottom-2 right-4 drop-shadow-3xl">
@@ -72,7 +49,7 @@ export default function SettingTeam() {
               </span>
             </div>
             <MemberList data={data} />
-          </div>
+          </div> */}
         </div>
       </div>
       <Dialog>
