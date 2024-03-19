@@ -3,11 +3,11 @@
 }
 
 .pmc-content-html .dot-red {
-  @apply w-3 p-[1px] ml-4 h-3 text-[12px] flex items-center justify-center rounded-full bg-orange-500 text-white;
+  @apply w-3 p-[1px] ml-2 h-3 text-[12px] flex items-center justify-center rounded-full bg-orange-500 text-white;
 }
 
 .pmc-content-html .dot-blue {
-  @apply w-3 pt-[2px] px-[1px] ml-4 h-3 text-[10px] flex items-center justify-center rounded-full bg-blue-500 text-white;
+  @apply w-3 pt-[2px] px-[1px] ml-2 h-3 text-[10px] flex items-center justify-center rounded-full bg-blue-500 text-white;
 }
 
 .pmc-content-html h1 {

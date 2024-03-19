@@ -15,7 +15,7 @@ const data = localStorageGetItem("data")
         "Lâm Đạt",
       ],
       [
-        "Thầy Huấn <span class='ml-1 dot-red inline-flex'>+</span><span class='ml-1 dot-blue inline-flex'>G</span>",
+        "Thầy Huấn <span class='ml-1 dot-red inline-flex'>+</span><span class='dot-blue inline-flex'>G</span>",
         "Lê Ku <span class='ml-1 dot-red inline-flex'>+</span>",
         "Lê Đức <span class='ml-1 dot-blue inline-flex'>G</span>",
         "Tuấn Phú Yên ",
