@@ -1,48 +1,10 @@
-// function generateTeams(data: any) {
-//     const oldVersion = localStorageGetItem('version');
-//     if(oldVersion != version) {
-//         localStorage.clear();
-//     }
-//     let newData = localStorageGetItem('data') || '{"data": []}';
-//     time = localStorageGetItem('time') || 0;
-//     newData = JSON.parse(newData).data;
-//     let renderData = data;
-
 import { localStorageGetItem, localStorageSetItem } from "./localStorage/helpers";
 
-//     const title = document.getElementById(`title`);
-//     const groups = document.getElementsByClassName(`group`);
-//     let groupName = 'Nhóm';
-
-//     if (newData.length && oldVersion == version) {
-//         renderData = newData;
-//         title.innerHTML =  `Kết Quả Lần ${time}`;
-//         groupName = "Đội";
-
-//     } else {
-//         title.innerHTML =  `Danh Sách Gốc`;
-//         groupName = "Nhóm";
-//     }
-
-//     for (const element of groups) {
-//         element.innerHTML = groupName;
-//     }
-
-//     for (let i = 0; i < renderData.length; i++) {
-//         for (let j = 0; j < renderData[i].length; j++) {
-//             const el = document.getElementById(`group-${j + 1}-name-${i + 1}`);
-//             el.innerHTML = renderData[i][j];
-//         }
-//     }
-
-//     localStorageSetItem('version', version);
-// }
-
-export async function randomTeams(data: any) {
+export async function randomTeams(data: any, dataName = 'data', timeKey = 'time') {
   const title = document.getElementById(`title`);
   const teams: any = document.getElementsByClassName(`teams`);
-  const time = localStorageGetItem("time")
-    ? parseInt(localStorageGetItem("time") ?? "0")
+  const time = localStorageGetItem(timeKey)
+    ? parseInt(localStorageGetItem(timeKey) ?? "0")
     : 0;
   if (title && time > 0) title.innerHTML = `Kết Quả Lần ${time + 1}`;
   if (teams && time > 0) {
@@ -68,9 +30,8 @@ export async function randomTeams(data: any) {
     clearInterval(rowSetInterval);
   }
 
-  localStorageSetItem("time", `${time + 1}`);
-  localStorageSetItem("data", JSON.stringify({ data: newData }));
-  //btnCreate.disabled = false;
+  localStorageSetItem(timeKey, `${time + 1}`);
+  localStorageSetItem(dataName, JSON.stringify({ data: newData }));
 }
 
 async function someAsyncFunction(data: any, i: number) {
