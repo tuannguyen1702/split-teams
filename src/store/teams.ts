@@ -34,7 +34,7 @@ const data = localStorageGetItem("data")
         "A Quang <span class='ml-1 dot-red inline-flex'>+</span> ",
         "A Dũng",
       ],
-      ["Chung VCB", "Duy", "Ngọc Anh", "Tâm Tic"],
+      ["Chung VCB", "Duy", "Ngọc Anh", "Tâm Vũ"],
       ["A Tân", "A Hải ", "Luis", "Bùi Thiện"],
       ["A Lành", "Sang", "A Chung", "A Hoàng "],
     ];
