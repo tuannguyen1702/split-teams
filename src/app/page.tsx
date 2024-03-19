@@ -66,7 +66,7 @@ export default function Home() {
         </div> */}
         </div>
       </div>
-      <div className="fixed -mx-2 md:mx-0 bg-white p-2 bottom-0 w-full md:bg-transparent md:static"><Button className="w-full" onClick={() => createTeams()}>Tạo Ngẫu Nhiên</Button></div>
+      <div className="fixed -mx-2 md:mx-0 bg-white p-2 md:p-0 bottom-0 w-full md:bg-transparent md:static"><Button className="w-full" onClick={() => createTeams()}>Tạo Ngẫu Nhiên</Button></div>
     </div>
     // <div className="flex">
     //   {/* <div>
