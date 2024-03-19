@@ -1,12 +1,14 @@
 // function generateTeams(data: any) {
-//     const oldVersion = localStorage.getItem('version');
+//     const oldVersion = localStorageGetItem('version');
 //     if(oldVersion != version) {
 //         localStorage.clear();
 //     }
-//     let newData = localStorage.getItem('data') || '{"data": []}';
-//     time = localStorage.getItem('time') || 0;
+//     let newData = localStorageGetItem('data') || '{"data": []}';
+//     time = localStorageGetItem('time') || 0;
 //     newData = JSON.parse(newData).data;
 //     let renderData = data;
+
+import { localStorageGetItem, localStorageSetItem } from "./localStorage/helpers";
 
 //     const title = document.getElementById(`title`);
 //     const groups = document.getElementsByClassName(`group`);
@@ -33,14 +35,14 @@
 //         }
 //     }
 
-//     localStorage.setItem('version', version);
+//     localStorageSetItem('version', version);
 // }
 
 export async function randomTeams(data: any) {
   const title = document.getElementById(`title`);
   const teams: any = document.getElementsByClassName(`teams`);
-  const time = localStorage.getItem("time")
-    ? parseInt(localStorage.getItem("time") ?? "0")
+  const time = localStorageGetItem("time")
+    ? parseInt(localStorageGetItem("time") ?? "0")
     : 0;
   if (title && time > 0) title.innerHTML = `Kết Quả Lần ${time + 1}`;
   if (teams && time > 0) {
@@ -66,8 +68,8 @@ export async function randomTeams(data: any) {
     clearInterval(rowSetInterval);
   }
 
-  localStorage.setItem("time", `${time + 1}`);
-  localStorage.setItem("data", JSON.stringify({ data: newData }));
+  localStorageSetItem("time", `${time + 1}`);
+  localStorageSetItem("data", JSON.stringify({ data: newData }));
   //btnCreate.disabled = false;
 }
 
