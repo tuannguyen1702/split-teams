@@ -2,8 +2,6 @@ import { Label } from "@/components/ui/label";
 import Image from "../Image";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { MemberData } from "@/type/member";
-import { type } from "os";
-
 interface MemberItemProps {
   data: MemberData,
   type: 'join' | 'unJoin' | 'notYetVoted';
@@ -21,8 +19,8 @@ export default function MemberItem(props: Readonly<MemberItemProps>) {
         <div className="w-[30px]">
           <Image
             className="w-30 h-30 rounded-full"
-            src={avatar || ""}
-            alt={id || ""}
+            src={avatar ?? ""}
+            alt={id ?? ""}
           />
         </div>
         <div className="flex-1">{name}</div>

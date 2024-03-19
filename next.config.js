@@ -24,15 +24,15 @@
         },
       ],
     },
-    async redirects() {
-      return [
-        {
-          source: '/',
-          destination: '/setting-team',
-          permanent: true,
-        },
-      ];
-    },
+    // async redirects() {
+    //   return [
+    //     {
+    //       source: '/',
+    //       destination: '/setting-team',
+    //       permanent: true,
+    //     },
+    //   ];
+    // },
   };
   
   module.exports = nextConfig;
