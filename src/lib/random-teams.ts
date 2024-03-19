@@ -38,7 +38,7 @@
 
 export async function randomTeams(data: any) {
   const title = document.getElementById(`title`);
-  const teams = document.getElementsByClassName(`teams`);
+  const teams: any = document.getElementsByClassName(`teams`);
   const time = localStorage.getItem("time")
     ? parseInt(localStorage.getItem("time") ?? "0")
     : 0;

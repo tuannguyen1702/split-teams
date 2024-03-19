@@ -9,22 +9,9 @@ import { randomTeams } from "@/lib/random-teams";
 // import Link from "next/link";
 
 export default function Home() {
-  const { totalTeam, totalTeamMember } = useTeamStore();
+  const { totalTeam, totalTeamMember, data, time } = useTeamStore();
 
-  const time = localStorage.getItem('time') ? parseInt(localStorage.getItem('time') ?? '0') : 0
-
-  const data = localStorage.getItem('data') ? JSON.parse(localStorage.getItem('data') ?? '{"data": "[]"}').data : [
-    ["Trịnh Thành ", "Lê Tín <span class='ml-1 dot-red inline-flex'>+</span>", "Truyền Ford <span class='ml-1 dot-red inline-flex'>+</span>", "Lâm Đạt"],
-    ["Thầy Huấn <span class='ml-1 dot-red inline-flex'>+</span>", "Lê Ku <span class='ml-1 dot-red inline-flex'>+</span>", "Lê Đức", "Tuấn Phú Yên "],
-    ["Bảo Ford", "A Thái", "Hiếu ", "Đàn"],
-    ["Thầy Trình", "Tuấn Nguyễn ", "A Khôi ", "Thành Neymar"],
-    ["Tho <span class='ml-1 dot-red inline-flex'>+</span>", "Quyền <span class='ml-1 dot-red inline-flex'>+</span>", "Jackie Dương <span class='ml-1 dot-red inline-flex'>+</span>", "Anh Quang "],
-    ["Đỉnh", "A Thuận", "A Quang <span class='ml-1 dot-red inline-flex'>+</span> ", "A Dũng"],
-    ["Chung VCB", "Duy", "Ngọc Anh", "Tâm Tic"],
-    ["A Tân", "A Hải ", "Luis", "Bùi Thiện"],
-    ["A Lành", "Sang", "A Chung", "A Hoàng "],
-  ];
-
+  
   const createTeams = () => {
     randomTeams(data)
   }
@@ -32,7 +19,7 @@ export default function Home() {
   return (
     <div className="pt-[64px] pb-[65px] md:py-0">
       <h1 className="flex  md:justify-center text-lg font-semibold pt-4" id="title">{time > 0 ? `Kết quả lần ${time}`: "Danh sách chia đội"}</h1>
-      <div className="flex-1 z-10 py-4 text-left">
+      <div className="flex-1 z-10 pb-4 md:pt-4 text-left">
         <div className="z-10 pt-4  mt-2 grid text-center md:w-full grid-cols-2 md:grid-cols-4 md:text-left gap-x-4 gap-y-8">
           {Array.from(Array(totalTeam).keys()).map((team) => (
             <div key={team}>
