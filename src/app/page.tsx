@@ -9,16 +9,67 @@ import { randomTeams } from "@/lib/random-teams";
 // import Link from "next/link";
 
 export default function Home() {
-  const { totalTeam, totalTeamMember, data, time } = useTeamStore();
+  const { totalTeam, totalTeamMember, time } = useTeamStore();
 
-  
-  const createTeams = () => {
-    randomTeams(data)
-  }
+  const data = [
+    [
+      "Lê Tín <span class='ml-1 dot-red inline-flex'>+</span>",
+      "Truyền Ford <span class='ml-1 dot-red inline-flex'>+</span>",
+      "Lâm Đạt",
+      "Trịnh Thành ",
+    ],
+    [
+      "Tuấn Phú Yên ",
+      "Lê Đức <span class='ml-1 dot-blue inline-flex'>G</span>",
+      "Lê Ku <span class='ml-1 dot-red inline-flex'>+</span>",
+      "Thầy Huấn <span class='ml-1 dot-red inline-flex'>+</span><span class='dot-blue inline-flex'>G</span>",
+    ],
+    [
+      "A Thái",
+      "Hiếu ",
+      "Bảo Ford <span class='ml-1 dot-blue inline-flex'>G</span>",
+      "Đàn <span class='ml-1 dot-blue inline-flex'>G</span>",
+    ],
+    [
+      "Tuấn Nguyễn <span class='ml-1 dot-blue inline-flex'>G</span>",
+      "Thành Neymar",
+      "Thầy Trình",
+      "A Khôi <span class='ml-1 dot-blue inline-flex'>G</span>",
+    ],
+    [
+      "Quyền <span class='ml-1 dot-red inline-flex'>+</span>",
+      "Jackie Dương <span class='ml-1 dot-red inline-flex'>+</span>",
+      "Phú ",
+      "Tho <span class='ml-1 dot-red inline-flex'>+</span>",
+    ],
+    [
+      "Đỉnh",
+      "A Dũng",
+      "A Quang <span class='ml-1 dot-red inline-flex'>+</span> ",
+      "A Thuận",
+    ],
+    ["Tâm Vũ", "Duy", "Ngọc Anh", "Chung VCB"],
+    ["A Tân", "Bùi Thiện", "Luis", "A Hải "],
+    [
+      "A Chung <span class='ml-1 dot-blue inline-flex'>G</span>",
+      "A Hoàng <span class='ml-1 dot-blue inline-flex'>G</span>",
+      "Sang",
+      "A Lành",
+    ],
+  ];
+
+  // const createTeams = () => {
+  //   randomTeams(data)
+  // }
 
   return (
     <div className="pt-[64px] pb-[65px] md:py-0">
-      <h1 className="flex  md:justify-center text-lg font-semibold pt-4" id="title">{time > 0 ? `Kết quả lần ${time}`: "Danh sách chia đội"}</h1>
+      <h1
+        className="flex  md:justify-center text-lg font-semibold pt-4"
+        id="title"
+      >
+        Danh sách các đội đá giải 30/04/2024
+      </h1>
       <div className="flex-1 z-10 pb-4 md:pt-4 text-left">
         <div className="z-10 pt-4  mt-2 grid text-center md:w-full grid-cols-2 md:grid-cols-4 md:text-left gap-x-4 gap-y-8">
           {Array.from(Array(totalTeam).keys()).map((team) => (
@@ -27,7 +78,12 @@ export default function Home() {
                 data-team={team + 1}
                 className="relative group rounded-lg px-4 py-2  data-[team='1']:bg-red-200 data-[team='2']:bg-blue-200 data-[team='3']:bg-yellow-200 data-[team='4']:bg-green-200 text-left"
               >
-                <span><span className="teams mr-2">{time > 0? 'Đội' :'Nhóm'}</span> {team + 1}</span>
+                <span>
+                  <span className="teams mr-2">
+                  Đội
+                  </span>{" "}
+                  {team + 1}
+                </span>
                 <span className="absolute text text-shadow-default text-[20px] group-data-[team='1']:text-red-500 group-data-[team='2']:text-blue-500  group-data-[team='3']:text-yellow-500 group-data-[team='4']:text-green-500 md:text-[70px] bottom-0 md:-bottom-2 right-4 drop-shadow-3xl">
                   <Icon className="h-[50px] w-[50px]" name="ShirtOutline" />
                 </span>
@@ -66,7 +122,7 @@ export default function Home() {
         </div> */}
         </div>
       </div>
-      <div className="fixed -mx-2 md:mx-0 bg-white p-2 md:p-0 bottom-0 w-full md:bg-transparent md:static"><Button className="w-full" onClick={() => createTeams()}>Tạo Ngẫu Nhiên</Button></div>
+      {/* <div className="fixed -mx-2 md:mx-0 bg-white p-2 md:p-0 bottom-0 w-full md:bg-transparent md:static"><Button className="w-full" onClick={() => createTeams()}>Tạo Ngẫu Nhiên</Button></div> */}
     </div>
     // <div className="flex">
     //   {/* <div>
