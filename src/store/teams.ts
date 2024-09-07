@@ -5,38 +5,58 @@ const time = localStorageGetItem("time")
   ? parseInt(localStorageGetItem("time") ?? "0")
   : 0;
 
+  console.log(`localStorageGetItem("data")`, localStorageGetItem("data") ? JSON.parse(localStorageGetItem("data"))?.data : [])
+
 const data = localStorageGetItem("data")
   ? JSON.parse(localStorageGetItem("data") ?? '{"data": "[]"}').data
   : [
       [
+        "Tuấn GC <span class='ml-1 dot-red inline-flex'>+</span>",
+        "A Tân + Toàn <span class='ml-1 dot-red inline-flex'>+</span>",
+        "Hùng Baze <span class='ml-1 dot-red inline-flex'>+</span>",
+        "Lê Đức",
+      ],
+      [
         "Trịnh Thành ",
-        "Lê Tín <span class='ml-1 dot-red inline-flex'>+</span>",
-        "Truyền Ford <span class='ml-1 dot-red inline-flex'>+</span>",
+        "Lê Tín",
+        "Truyền Ford",
         "Lâm Đạt",
       ],
       [
-        "Thầy Huấn <span class='ml-1 dot-red inline-flex'>+</span><span class='dot-blue inline-flex'>G</span>",
-        "Lê Ku <span class='ml-1 dot-red inline-flex'>+</span>",
-        "Lê Đức <span class='ml-1 dot-blue inline-flex'>G</span>",
-        "Tuấn Phú Yên ",
-      ],
-      ["Bảo Ford <span class='ml-1 dot-blue inline-flex'>G</span>", "A Thái", "Hiếu ", "Đàn <span class='ml-1 dot-blue inline-flex'>G</span>"],
-      ["Thầy Trình", "Tuấn Nguyễn <span class='ml-1 dot-blue inline-flex'>G</span>", "A Khôi <span class='ml-1 dot-blue inline-flex'>G</span>", "Thành Neymar"],
-      [
-        "Tho <span class='ml-1 dot-red inline-flex'>+</span>",
-        "Quyền <span class='ml-1 dot-red inline-flex'>+</span>",
-        "Jackie Dương <span class='ml-1 dot-red inline-flex'>+</span>",
-        "Phú ",
+        "Thái Zindo",
+        "Tuấn Nguyễn",
+        "Minh Khôi",
+        "Bảo Nguyễn",
       ],
       [
-        "Đỉnh",
-        "A Thuận",
-        "A Quang <span class='ml-1 dot-red inline-flex'>+</span> ",
-        "A Dũng",
+        "Tho Pirlo",
+        "Quyền CC",
+        "Jackie Dương",
+        "Bình Trần",
       ],
-      ["Chung VCB", "Duy", "Ngọc Anh", "Tâm Vũ"],
-      ["A Tân", "A Hải ", "Luis", "Bùi Thiện"],
-      ["A Lành", "Sang", "A Chung <span class='ml-1 dot-blue inline-flex'>G</span>", "A Hoàng <span class='ml-1 dot-blue inline-flex'>G</span>"],
+      [
+        "Thiện Messi",
+        "Bảo Ford",
+        "Hoàng Royal",
+        "Hiếu Thứ 3",
+      ],
+      [
+        "Tuấn PY",
+        "Nguyễn Đàn <span class='ml-1 dot-red inline-flex'>+</span>",
+        "Thành Neymar",
+        "Đức Máy Xúc",
+      ],
+      ["Tâm Tít", "Nguyễn Đàn <span class='ml-1 dot-red inline-flex'>+</span>", "Thanh Bình Điền", "Trần Quang <span class='ml-1 dot-red inline-flex'>+</span>",],
+      ["Ngọc Dũng", "Phú Chủ Tịch <span class='ml-1 dot-red inline-flex'>+</span>", "Đỉnh", "Tín Nguyễn"],
+      [
+        "Hải SV <span class='ml-1 dot-red inline-flex'>+</span>",
+        "Louis",
+        "Lành Nguyễn",
+        "Sang Delima",
+      ],
+      
+      ["Ngọc Anh", "Luka Duy", "Chung VCB", "Ngọc Thuận"],
+      ["Thầy Trình", "----", "----", "----"],
     ];
 
 type TeamState = {
@@ -52,7 +72,7 @@ export const useTeamStore = create<TeamState>((set) => ({
   data: data,
   time: time,
   totalTeam: 4,
-  totalTeamMember: 9,
+  totalTeamMember: 11,
   setTotalTeam: (value: number) => set({ totalTeam: value }),
   setTotalTeamMember: (value: number) => set({ totalTeamMember: value }),
 }));

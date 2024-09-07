@@ -9,58 +9,58 @@ import { randomTeams } from "@/lib/random-teams";
 // import Link from "next/link";
 
 export default function Home() {
-  const { totalTeam, totalTeamMember, time } = useTeamStore();
+  const { totalTeam, totalTeamMember, data, time } = useTeamStore();
 
-  const data = [
-    [
-      "Lê Tín <span class='ml-1 dot-red inline-flex'>+</span>",
-      "Truyền Ford <span class='ml-1 dot-red inline-flex'>+</span>",
-      "Lâm Đạt",
-      "Trịnh Thành ",
-    ],
-    [
-      "Tuấn Phú Yên ",
-      "Lê Đức <span class='ml-1 dot-blue inline-flex'>G</span>",
-      "Lê Ku <span class='ml-1 dot-red inline-flex'>+</span>",
-      "Thầy Huấn <span class='ml-1 dot-red inline-flex'>+</span><span class='dot-blue inline-flex'>G</span>",
-    ],
-    [
-      "A Thái",
-      "Hiếu ",
-      "Bảo Ford <span class='ml-1 dot-blue inline-flex'>G</span>",
-      "Đàn <span class='ml-1 dot-blue inline-flex'>G</span>",
-    ],
-    [
-      "Tuấn Nguyễn <span class='ml-1 dot-blue inline-flex'>G</span>",
-      "Thành Neymar",
-      "Thầy Trình",
-      "A Khôi <span class='ml-1 dot-blue inline-flex'>G</span>",
-    ],
-    [
-      "Quyền <span class='ml-1 dot-red inline-flex'>+</span>",
-      "Jackie Dương <span class='ml-1 dot-red inline-flex'>+</span>",
-      "Phú ",
-      "Tho <span class='ml-1 dot-red inline-flex'>+</span>",
-    ],
-    [
-      "Đỉnh",
-      "A Dũng",
-      "A Quang <span class='ml-1 dot-red inline-flex'>+</span> ",
-      "A Thuận",
-    ],
-    ["Tâm Vũ", "Duy", "Ngọc Anh", "Chung VCB"],
-    ["A Tân", "Bùi Thiện", "Luis", "A Hải "],
-    [
-      "A Chung <span class='ml-1 dot-blue inline-flex'>G</span>",
-      "A Hoàng <span class='ml-1 dot-blue inline-flex'>G</span>",
-      "Sang",
-      "A Lành",
-    ],
-  ];
+  // const data = [
+  //   [
+  //     "Lê Tín <span class='ml-1 dot-red inline-flex'>+</span>",
+  //     "Truyền Ford <span class='ml-1 dot-red inline-flex'>+</span>",
+  //     "Lâm Đạt",
+  //     "Trịnh Thành ",
+  //   ],
+  //   [
+  //     "Tuấn Phú Yên ",
+  //     "Lê Đức <span class='ml-1 dot-blue inline-flex'>G</span>",
+  //     "Lê Ku <span class='ml-1 dot-red inline-flex'>+</span>",
+  //     "Thầy Huấn <span class='ml-1 dot-red inline-flex'>+</span><span class='dot-blue inline-flex'>G</span>",
+  //   ],
+  //   [
+  //     "A Thái",
+  //     "Hiếu ",
+  //     "Bảo Ford <span class='ml-1 dot-blue inline-flex'>G</span>",
+  //     "Đàn <span class='ml-1 dot-blue inline-flex'>G</span>",
+  //   ],
+  //   [
+  //     "Tuấn Nguyễn <span class='ml-1 dot-blue inline-flex'>G</span>",
+  //     "Thành Neymar",
+  //     "Thầy Trình",
+  //     "A Khôi <span class='ml-1 dot-blue inline-flex'>G</span>",
+  //   ],
+  //   [
+  //     "Quyền <span class='ml-1 dot-red inline-flex'>+</span>",
+  //     "Jackie Dương <span class='ml-1 dot-red inline-flex'>+</span>",
+  //     "Phú ",
+  //     "Tho <span class='ml-1 dot-red inline-flex'>+</span>",
+  //   ],
+  //   [
+  //     "Đỉnh",
+  //     "A Dũng",
+  //     "A Quang <span class='ml-1 dot-red inline-flex'>+</span> ",
+  //     "A Thuận",
+  //   ],
+  //   ["Tâm Vũ", "Duy", "Ngọc Anh", "Chung VCB"],
+  //   ["A Tân", "Bùi Thiện", "Luis", "A Hải "],
+  //   [
+  //     "A Chung <span class='ml-1 dot-blue inline-flex'>G</span>",
+  //     "A Hoàng <span class='ml-1 dot-blue inline-flex'>G</span>",
+  //     "Sang",
+  //     "A Lành",
+  //   ],
+  // ];
 
-  // const createTeams = () => {
-  //   randomTeams(data)
-  // }
+  const createTeams = () => {
+    randomTeams(data)
+  }
 
   return (
     <div className="pt-[64px] pb-[65px] md:py-0">
@@ -68,7 +68,7 @@ export default function Home() {
         className="flex  md:justify-center text-lg font-semibold pt-4"
         id="title"
       >
-        Danh sách các đội đá giải 30/04/2024
+        Danh sách các đội đá giải 2024
       </h1>
       <div className="flex-1 z-10 pb-4 md:pt-4 text-left">
         <div className="z-10 pt-4  mt-2 grid text-center md:w-full grid-cols-2 md:grid-cols-4 md:text-left gap-x-4 gap-y-8">
@@ -122,7 +122,7 @@ export default function Home() {
         </div> */}
         </div>
       </div>
-      {/* <div className="fixed -mx-2 md:mx-0 bg-white p-2 md:p-0 bottom-0 w-full md:bg-transparent md:static"><Button className="w-full" onClick={() => createTeams()}>Tạo Ngẫu Nhiên</Button></div> */}
+      <div className="fixed -mx-2 md:mx-0 bg-white p-2 md:p-0 bottom-0 w-full md:bg-transparent md:static"><Button className="w-full" onClick={() => createTeams()}>Tạo Ngẫu Nhiên</Button></div>
     </div>
     // <div className="flex">
     //   {/* <div>
