@@ -46,7 +46,7 @@ const data = localStorageGetItem("data")
         "Thành Neymar",
         "Đức Máy Xúc",
       ],
-      ["Tâm Tít", "Nguyễn Đàn <span class='ml-1 dot-red inline-flex'>+</span>", "Thanh Bình Điền", "Trần Quang <span class='ml-1 dot-red inline-flex'>+</span>",],
+      ["Tâm Tít", "Lê Ku <span class='ml-1 dot-red inline-flex'>+</span>", "Thanh Bình Điền", "Trần Quang <span class='ml-1 dot-red inline-flex'>+</span>",],
       ["Ngọc Dũng", "Phú Chủ Tịch <span class='ml-1 dot-red inline-flex'>+</span>", "Đỉnh", "Tín Nguyễn"],
       [
         "Hải SV <span class='ml-1 dot-red inline-flex'>+</span>",
