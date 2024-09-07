@@ -14,7 +14,7 @@ const data = localStorageGetItem("data")
         "Tuấn GC <span class='ml-1 dot-red inline-flex'>+</span>",
         "A Tân + Toàn <span class='ml-1 dot-red inline-flex'>+</span>",
         "Hùng Baze <span class='ml-1 dot-red inline-flex'>+</span>",
-        "Lê Đức",
+        "A Xuân",
       ],
       [
         "Trịnh Thành ",
@@ -56,7 +56,7 @@ const data = localStorageGetItem("data")
       ],
       
       ["Ngọc Anh", "Luka Duy", "Chung VCB", "Ngọc Thuận"],
-      ["Thầy Trình", "----", "----", "----"],
+      ["Thầy Trình", "Lê Đức", "----", "----"],
     ];
 
 type TeamState = {
