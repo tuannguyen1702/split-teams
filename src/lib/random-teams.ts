@@ -8,7 +8,10 @@
 //     newData = JSON.parse(newData).data;
 //     let renderData = data;
 
-import { localStorageGetItem, localStorageSetItem } from "./localStorage/helpers";
+import {
+  localStorageGetItem,
+  localStorageSetItem,
+} from "./localStorage/helpers";
 
 //     const title = document.getElementById(`title`);
 //     const groups = document.getElementsByClassName(`group`);
@@ -54,7 +57,7 @@ export async function randomTeams(data: any) {
   const newData = [];
   for (let i = 0; i < data.length; i++) {
     const rowSetInterval = setInterval(() => {
-      const randomArr1 = generateUniqueRandomNumbers(0, 3);
+      const randomArr1 = generateUniqueRandomNumbers(0, 1);
       for (let j = 0; j < randomArr1.length; j++) {
         const el = document.getElementById(`group-${j + 1}-name-${i + 1}`);
         if (el) el.innerHTML = data[i][randomArr1[j]];
@@ -75,7 +78,15 @@ export async function randomTeams(data: any) {
 
 async function someAsyncFunction(data: any, i: number) {
   return new Promise((resolve) => {
-    const randomArr = generateUniqueRandomNumbers(0, 3);
+    let randomArr = generateUniqueRandomNumbers(0, 1);
+
+    // console.log(i, randomArr)
+
+    if (i === 4 || i === 8) {
+      randomArr = [0, 1];
+    }
+
+    // console.log(i, randomArr)
 
     setTimeout(() => {
       const newRow = [];

@@ -71,12 +71,12 @@ export default function Home() {
         Danh sách các đội đá giải 2024
       </h1>
       <div className="flex-1 z-10 pb-4 md:pt-4 text-left">
-        <div className="z-10 pt-4  mt-2 grid text-center md:w-full grid-cols-2 md:grid-cols-4 md:text-left gap-x-4 gap-y-8">
+        <div className="z-10 pt-4  mt-2 grid text-center md:w-full grid-cols-2 md:grid-cols-2 md:text-left gap-x-4 gap-y-8">
           {Array.from(Array(totalTeam).keys()).map((team) => (
             <div key={team}>
               <div
                 data-team={team + 1}
-                className="relative group rounded-lg px-4 py-2  data-[team='1']:bg-red-200 data-[team='2']:bg-blue-200 data-[team='3']:bg-yellow-200 data-[team='4']:bg-green-200 text-left"
+                className="relative group rounded-lg px-4 py-2  data-[team='1']:bg-red-200 data-[team='3']:bg-blue-200 data-[team='2']:bg-yellow-200 data-[team='4']:bg-green-200 text-left"
               >
                 <span>
                   <span className="teams mr-2">
@@ -84,7 +84,7 @@ export default function Home() {
                   </span>{" "}
                   {team + 1}
                 </span>
-                <span className="absolute text text-shadow-default text-[20px] group-data-[team='1']:text-red-500 group-data-[team='2']:text-blue-500  group-data-[team='3']:text-yellow-500 group-data-[team='4']:text-green-500 md:text-[70px] bottom-0 md:-bottom-2 right-4 drop-shadow-3xl">
+                <span className="absolute text text-shadow-default text-[20px] group-data-[team='1']:text-red-500 group-data-[team='3']:text-blue-500  group-data-[team='2']:text-yellow-500 group-data-[team='4']:text-green-500 md:text-[70px] bottom-0 md:-bottom-2 right-4 drop-shadow-3xl">
                   <Icon className="h-[50px] w-[50px]" name="ShirtOutline" />
                 </span>
               </div>
