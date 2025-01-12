@@ -36,6 +36,7 @@ const data = localStorageGetItem("data")
 
      
       ["Du Ford", "--"],
+      ["Phú Chủ Tịch", "Ngọc Anh"],
     ];
 
 type TeamState = {
@@ -51,7 +52,7 @@ export const useTeamStore = create<TeamState>((set) => ({
   data: data,
   time: time,
   totalTeam: 2,
-  totalTeamMember: 11,
+  totalTeamMember: 12,
   setTotalTeam: (value: number) => set({ totalTeam: value }),
   setTotalTeamMember: (value: number) => set({ totalTeamMember: value }),
 }));
