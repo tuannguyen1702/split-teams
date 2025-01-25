@@ -26,7 +26,7 @@ const data = localStorageGetItem("data")
 
       ["A Chung", "Lâm Đạt"],
       ["Tuấn Nguyễn", "A Khôi"],
-      ["Du", "--"],
+      ["Du <span class='ml-1 dot-red inline-flex'>+</span>", "--"],
     ];
 
 type TeamState = {
