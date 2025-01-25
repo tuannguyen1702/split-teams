@@ -16,27 +16,17 @@ const data = localStorageGetItem("data")
   ? JSON.parse(localStorageGetItem("data") ?? '{"data": "[]"}').data
   : [
       [
-        "Tuấn GC",
-        "Tâm Casilas",
+        "Tuấn GC <span class='ml-1 dot-red inline-flex'>+</span>",
+        "Đức",
       ],
-      ["Lê Tín <span class='ml-1 dot-red inline-flex'>+</span>", "Thành Nai Tơ"],
-      ["Quyền CC <span class='ml-1 dot-red inline-flex'>+</span>", "Tín Nguyễn"],
-      ["Bảo Ford", "Hiếu Thứ 3"],
+      ["Thuận", "Phú"],
+      ["Dũng + Con", "Tín Nguyễn"],
+      ["A Lành + Con", "Sang"],
       ["Tuấn PY", "Thành Neymar"],
 
-      ["Sang Delima", "Lành Nguyễn"],
-      ["Tuấn Nguyễn", "Truyền Ford"],
-      ["Luka Duy <span class='ml-1 dot-red inline-flex'>+</span>", "Tâm Photo"],
-      ["Thiện Mẹc Si", "Hải SV"],
-      [
-        "Dũng Xavi <span class='ml-1 dot-red inline-flex'>+</span>",
-        "Đạt",
-      ],
-     
-
-     
-      ["Du Ford", "--"],
-      ["Phú Chủ Tịch", "Ngọc Anh"],
+      ["A Chung", "Lâm Đạt"],
+      ["Tuấn Nguyễn", "A Khôi"],
+      ["Du", "--"],
     ];
 
 type TeamState = {
@@ -52,7 +42,7 @@ export const useTeamStore = create<TeamState>((set) => ({
   data: data,
   time: time,
   totalTeam: 2,
-  totalTeamMember: 12,
+  totalTeamMember: 8,
   setTotalTeam: (value: number) => set({ totalTeam: value }),
   setTotalTeamMember: (value: number) => set({ totalTeamMember: value }),
 }));
