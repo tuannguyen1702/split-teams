@@ -19,7 +19,7 @@ const data = localStorageGetItem("data")
   : [
       //["Tuấn GC", "Lê Đức <span class='ml-1 dot-red inline-flex'>+</span>"],
       ["Bình <span class='ml-1 dot-red inline-flex'>+</span>", "A Thanh <span class='ml-1 dot-red inline-flex'>+</span>", "Cang", "A Lương"],
-      ["Quang <span class='ml-1 dot-red inline-flex'>+</span>", "A Thái>", "A Hải", "A Chung"],
+      ["Quang <span class='ml-1 dot-red inline-flex'>+</span>", "A Thái", "A Hải", "A Chung"],
       ["A Thắng <span class='ml-1 dot-red inline-flex'>+</span>", "A Vương", "A Tân", "A Khôi"],
       // ["Đạt G", "Đức Máy Xúc"],
       // ["Ngọc Anh", "Tâm Photo"],
