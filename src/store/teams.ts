@@ -18,17 +18,17 @@ const data = localStorageGetItem("data")
   ? JSON.parse(localStorageGetItem("data") ?? '{"data": "[]"}').data
   : [
       //["Tuấn GC", "Lê Đức <span class='ml-1 dot-red inline-flex'>+</span>"],
-      ["Tuấn GC", "Khoa De Gea"],
-      ["Quyền CC", "Tho Pirlo"],
-      ["Phú Chủ Tịch", "Trần Quang"],
-      ["Đạt G", "Đức Máy Xúc"],
-      ["Ngọc Anh", "Tâm Photo"],
-      ["Bảo Nguyễn", "Bảo Ford"],
-      ["Truyền", "Thành Naito"],
-      ["Tuấn Phú Yên", "Philip Lam"],
-      ["Bùi Thiện", "Thành Neymar"],
-      ["Du Ford", "Tuấn Nguyễn"],
-      ["Tín Nguyễn", "Dũng Xavi"],
+      ["Bình <span class='ml-1 dot-red inline-flex'>+</span>", "A Thanh <span class='ml-1 dot-red inline-flex'>+</span>", "Cang", "A Lương"],
+      ["Quang <span class='ml-1 dot-red inline-flex'>+</span>", "A Thái>", "A Hải", "A Chung"],
+      ["A Thắng <span class='ml-1 dot-red inline-flex'>+</span>", "A Vương", "A Tân", "A Khôi"],
+      // ["Đạt G", "Đức Máy Xúc"],
+      // ["Ngọc Anh", "Tâm Photo"],
+      // ["Bảo Nguyễn", "Bảo Ford"],
+      // ["Truyền", "Thành Naito"],
+      // ["Tuấn Phú Yên", "Philip Lam"],
+      // ["Bùi Thiện", "Thành Neymar"],
+      // ["Du Ford", "Tuấn Nguyễn"],
+      // ["Tín Nguyễn", "Dũng Xavi"],
     ];
 
 type TeamState = {
@@ -43,8 +43,8 @@ type TeamState = {
 export const useTeamStore = create<TeamState>((set) => ({
   data: data,
   time: time,
-  totalTeam: 2,
-  totalTeamMember: 11,
+  totalTeam: 4,
+  totalTeamMember: 3,
   setTotalTeam: (value: number) => set({ totalTeam: value }),
   setTotalTeamMember: (value: number) => set({ totalTeamMember: value }),
 }));
