@@ -15,24 +15,18 @@ console.log(
 const data = localStorageGetItem("data")
   ? JSON.parse(localStorageGetItem("data") ?? '{"data": "[]"}').data
   : [
-      [
-        "Thanh",
-        "Phong <span class='ml-1 dot-red inline-flex'>+</span>"
-        
-      ],
-      ["Thuận", "Chung"],
-      ["Thọ", "Dương"],
-      ["Quyền", "Phú"],
-      [
-        "Tuấn Nguyễn",
-        "Lê Đức <span class='ml-1 dot-red inline-flex'>+</span>"
-        
-      ],
-      ["Đỉnh", "Ngọc Dũng"],
-      ["Trịnh Thành", "Tâm Tít"],
-      ["A Du", "A Khôi"],
-      ["Anh Tân", "Thầy Trình"],
-      ["--", "Anh Lành"],
+      //["Tuấn GC", "Lê Đức <span class='ml-1 dot-red inline-flex'>+</span>"],
+      ["Tuấn GC", "Khoa De Gea"],
+      ["Quyền CC", "Tho Pirlo"],
+      ["Phú Chủ Tịch", "Trần Quang"],
+      ["Đạt G", "Đức Máy Xúc"],
+      ["Ngọc Anh", "Tâm Photo"],
+      ["Bảo Nguyễn", "Bảo Ford"],
+      ["Truyền", "Thành Naito"],
+      ["Tuấn Phú Yên", "Philip Lam"],
+      ["Bùi Thiện", "Thành Neymar"],
+      ["Du Ford", "Tuấn Nguyễn"],
+      ["Tín Nguyễn", "Dũng Xavi"],
     ];
 
 type TeamState = {

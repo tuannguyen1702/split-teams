@@ -82,7 +82,7 @@ async function someAsyncFunction(data: any, i: number) {
 
     // console.log(i, randomArr)
 
-    if (i === 4 || i === 8) {
+    if (i === 8) {
       randomArr = [0, 1];
     }
 
