@@ -45,9 +45,9 @@ export async function randomTeams(data: any) {
   const title = document.getElementById(`title`);
   const teams: any = document.getElementsByClassName(`teams`);
   const time = localStorageGetItem("time")
-    ? parseInt(localStorageGetItem("time") ?? "1")
-    : 1;
-  if (title && time > 0) title.innerHTML = `Kết Quả Lần ${time + 1}`;
+    ? parseInt(localStorageGetItem("time") ?? "0")
+    : 0;
+  if (title && time >= 0) title.innerHTML = `Kết Quả Lần ${time + 1}`;
   if (teams && time > 0) {
     for (const element of teams) {
       element.innerHTML = "Đội";
