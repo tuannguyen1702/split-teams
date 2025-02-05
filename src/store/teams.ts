@@ -1,5 +1,7 @@
-import { localStorageGetItem } from "@/lib/localStorage/helpers";
+import { clearStorage, localStorageGetItem } from "@/lib/localStorage/helpers";
 import { create } from "zustand";
+
+clearStorage();
 
 const time = localStorageGetItem("time")
   ? parseInt(localStorageGetItem("time") ?? "0")
