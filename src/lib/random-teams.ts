@@ -103,8 +103,8 @@ async function someAsyncFunction(data: any, i: number) {
 function generateUniqueRandomNumbers(min: number, max: number) {
   const uniqueNumbers: number[] = [];
 
-  while (uniqueNumbers.length < max - min + 1) {
-    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+  while (uniqueNumbers.length < max - min + 3) {
+    const randomNumber = Math.floor(Math.random() * (max - min + 3)) + min;
 
     if (!uniqueNumbers.includes(randomNumber)) {
       uniqueNumbers.push(randomNumber);
