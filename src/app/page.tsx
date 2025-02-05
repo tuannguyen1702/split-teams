@@ -68,7 +68,7 @@ export default function Home() {
         className="flex  md:justify-center text-lg font-semibold pt-4"
         id="title"
       >
-        Danh sách các đội đá giải 2024
+        Danh sách gốc
       </h1>
       <div className="flex-1 z-10 pb-4 md:pt-4 text-left">
         <div className="z-10 pt-4  mt-2 grid text-center md:w-full grid-cols-2 md:grid-cols-2 md:text-left gap-x-4 gap-y-8">
