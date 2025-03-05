@@ -27,7 +27,7 @@ const data = localStorageGetItem("data")
       ["Hiếu Thứ 3", "Anh Hải", "Thầy Trình", "Louis"],
       ["Chung VCB", "Ngọc Anh", "Luka Duy", "Phú Chủ Tịch"],
       ["Bảo Ford", "A Tân", "Bùi Thiện", "Du Ford"],
-      ["Anh Hoàng", "Minh Khôi", "Sang Delima", "Lành Nguyễn"],
+      ["Anh Hoàng",  "Sang Delima", "Lành Nguyễn", "--",],
       // ["Đạt G", "Đức Máy Xúc"],
       // ["Ngọc Anh", "Tâm Photo"],
       // ["Bảo Nguyễn", "Bảo Ford"],
