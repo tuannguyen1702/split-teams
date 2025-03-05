@@ -41,6 +41,8 @@ import {
 //     localStorageSetItem('version', version);
 // }
 
+let dataCompare: any = [];
+
 export async function randomTeams(data: any) {
   const title = document.getElementById(`title`);
   const teams: any = document.getElementsByClassName(`teams`);
@@ -78,18 +80,24 @@ export async function randomTeams(data: any) {
 
 async function someAsyncFunction(data: any, i: number) {
   return new Promise((resolve) => {
+    if (i === 0) dataCompare = [];
+
     let randomArr = generateUniqueRandomNumbers(0, 1);
 
-    // console.log(i, randomArr)
+    dataCompare.push(randomArr);
 
-    if (i === 8) {
-      randomArr = [0, 1];
-    }
+    // if (i === 8) {
+    //   randomArr = [0, 1];
+    // }
 
     // console.log(i, randomArr)
 
     setTimeout(() => {
       const newRow = [];
+
+      if (dataCompare.length && i === 8) randomArr = dataCompare[3];
+      if (dataCompare.length && i === 9) randomArr = dataCompare[0];
+
       for (let j = 0; j < randomArr.length; j++) {
         const el = document.getElementById(`group-${j + 1}-name-${i + 1}`);
         if (el) el.innerHTML = data[i][randomArr[j]];
