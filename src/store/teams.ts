@@ -17,9 +17,9 @@ console.log(
 const data = localStorageGetItem("data")
   ? JSON.parse(localStorageGetItem("data") ?? '{"data": "[]"}').data
   : [
-      ["Bình <span class='ml-1 dot-red inline-flex'>+</span>", "A Thanh  <span class='ml-1 dot-red inline-flex'>+</span>", "Cang", "A Lương"],
-      ["Quang  <span class='ml-1 dot-red inline-flex'>+</span>", "A Thắng", "A Thái <span class='ml-1 dot-red inline-flex'>+</span>", "A Hải"],
-      ["A Kiên", "A Vương", "Thầy Trình", "A Tân"],
+      ["Bình <span class='ml-1 dot-red inline-flex'>+</span>", "A Thanh  <span class='ml-1 dot-red inline-flex'>+</span>", "Quang", "A Lương"],
+      ["A Thái  <span class='ml-1 dot-red inline-flex'>+</span>", "Chung", "Sỹ", "A Hải"],
+      ["A Kiên", "A Vương", "Thầy Trình  <span class='ml-1 dot-red inline-flex'>+</span>", "A Tân"],
       // ["Tuấn Nguyễn", "Nguyễn Thanh", "Đức Máy Xúc", "Thành Neymar"],
       // ["Quyền CC", "Anh Tho  <span class='ml-1 dot-red inline-flex'>+</span>", "A Bình", "Ngọc Thuận"],
       // ["Đỉnh Bùi", "Ngọc Dũng", "Luân TQ", "Tín Nguyễn"],
