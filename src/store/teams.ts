@@ -37,13 +37,13 @@ const data = localStorageGetItem("data")
       // ["Du Ford", "Tuấn Nguyễn"],
       // ["Tín Nguyễn", "Dũng Xavi"],
 
-    ["TUẤN GÒ CÔNG <span class='ml-1 dot-red inline-flex'>+</span>", "A TÂN/TOÀN <span class='ml-1 text-blue inline-flex'>*</span>", "LÊ ĐỨC", "LUÂN TQ/LÂM ĐẠT <span class='ml-1 text-blue inline-flex'>*</span>"],
+    ["TUẤN GÒ CÔNG <span class='ml-1 dot-red inline-flex'>+</span>", "A TÂN/TOÀN <span class='ml-1 dot-red bg-blue-500 inline-flex'>*</span>", "LÊ ĐỨC", "LUÂN TQ/LÂM ĐẠT <span class='ml- dot-red bg-blue-500 inline-flex'>*</span>"],
     ["NGUYỄN THANH", "LINTE", "THÀNH NAITO", "TRUYỀN FORD"],
     ["TÍN NGUYỄN <span class='ml-1 dot-red inline-flex'>+</span>", "DU FORD", "QUỐC BẢO", "THÁI ZINDO"],
     ["NGỌC THUẬN", "QUYỀN", "ANH THO", "ÚT NHỎ <span class='ml-1 dot-red inline-flex'>+</span>"],
     ["JACKIE DƯƠNG <span class='ml-1 dot-red inline-flex'>+</span>", "TRẦN QUANG", "VĨNH PHÚ <span class='ml-1 dot-red inline-flex'>+</span>", "LÊ KU"],
-    ["ĐỈNH BÙI", "CAO PHONG <span class='ml-1 dot-red inline-flex'>+</span>", "NGỌC DŨNG/CON <span class='ml-1 text-blue inline-flex'>*</span>", "PHI HỌC"],
-    ["TUẤN PY/CON <span class='ml-1 text-blue inline-flex'>*</span>", "THÀNH NEYMAR", "TUẤN NGUYỄN", "ĐỨC MÁY XÚC"],
+    ["ĐỈNH BÙI", "CAO PHONG <span class='ml-1 dot-red inline-flex'>+</span>", "NGỌC DŨNG/CON <span class='ml-1 dot-red bg-blue-500 inline-flex'>*</span>", "PHI HỌC"],
+    ["TUẤN PY/CON <span class='ml-1 dot-red bg-blue-500 inline-flex'>*</span>", "THÀNH NEYMAR", "TUẤN NGUYỄN", "ĐỨC MÁY XÚC"],
     ["VĂN CHUNG <span class='ml-1 dot-red inline-flex'>+</span>", "HOÀNG DUY <span class='ml-1 dot-red inline-flex'>+</span>", "NGỌC ANH", "TÂM TÍT"],
     ["ANH HẢI", "LOUIS", "BÙI THIỆN", "THẦY TRỊNH"],
     ["MINH KHÔI", "LÀNH NGUYỄN", "SANG DELIMA", "HOÀNG PHẠM"]
