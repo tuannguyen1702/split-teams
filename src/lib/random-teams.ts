@@ -95,8 +95,8 @@ async function someAsyncFunction(data: any, i: number) {
     setTimeout(() => {
       const newRow = [];
 
-      if (dataCompare.length && i === 8) randomArr = dataCompare[3];
-      if (dataCompare.length && i === 9) randomArr = dataCompare[0];
+      // if (dataCompare.length && i === 8) randomArr = dataCompare[3];
+      if (dataCompare.length && i === 6) randomArr = dataCompare[0];
 
       for (let j = 0; j < randomArr.length; j++) {
         const el = document.getElementById(`group-${j + 1}-name-${i + 1}`);
