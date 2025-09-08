@@ -17,9 +17,9 @@ console.log(
 const data = localStorageGetItem("data")
   ? JSON.parse(localStorageGetItem("data") ?? '{"data": "[]"}').data
   : [
-      ["Bình <span class='ml-1 dot-red inline-flex'>+</span>", "A Thanh  <span class='ml-1 dot-red inline-flex'>+</span>", "Quang", "A Lương"],
-      ["A Thái  <span class='ml-1 dot-red inline-flex'>+</span>", "Chung", "Sỹ", "A Hải"],
-      ["A Kiên", "A Vương", "Thầy Trình  <span class='ml-1 dot-red inline-flex'>+</span>", "A Tân"],
+      // ["Bình <span class='ml-1 dot-red inline-flex'>+</span>", "A Thanh  <span class='ml-1 dot-red inline-flex'>+</span>", "Quang", "A Lương"],
+      // ["A Thái  <span class='ml-1 dot-red inline-flex'>+</span>", "Chung", "Sỹ", "A Hải"],
+      // ["A Kiên", "A Vương", "Thầy Trình  <span class='ml-1 dot-red inline-flex'>+</span>", "A Tân"],
       // ["Tuấn Nguyễn", "Nguyễn Thanh", "Đức Máy Xúc", "Thành Neymar"],
       // ["Quyền CC", "Anh Tho  <span class='ml-1 dot-red inline-flex'>+</span>", "A Bình", "Ngọc Thuận"],
       // ["Đỉnh Bùi", "Ngọc Dũng", "Luân TQ", "Tín Nguyễn"],
@@ -36,6 +36,17 @@ const data = localStorageGetItem("data")
       // ["Bùi Thiện", "Thành Neymar"],
       // ["Du Ford", "Tuấn Nguyễn"],
       // ["Tín Nguyễn", "Dũng Xavi"],
+
+    ["TUẤN GÒ CÔNG <span class='ml-1 dot-red inline-flex'>+</span>", "A TÂN/TOÀN", "LÊ ĐỨC", "LUÂN TQ/LÂM ĐẠT"],
+    ["NGUYỄN THANH", "LINTE", "THÀNH NAITO", "TRUYỀN FORD"],
+    ["TÍN NGUYỄN <span class='ml-1 dot-red inline-flex'>+</span>", "DU FORD", "QUỐC BẢO", "THÁI ZINDO"],
+    ["NGỌC THUẬN", "QUYỀN", "ANH THO", "ÚT NHỎ <span class='ml-1 dot-red inline-flex'>+</span>"],
+    ["JACKIE DƯƠNG <span class='ml-1 dot-red inline-flex'>+</span>", "TRẦN QUANG", "VĨNH PHÚ <span class='ml-1 dot-red inline-flex'>+</span>", "LÊ KU"],
+    ["ĐÌNH BÙI", "CAO PHONG <span class='ml-1 dot-red inline-flex'>+</span>", "NGỌC DŨNG/CON", "PHI HỌC"],
+    ["TUẤN PY/CON", "THÀNH NEYMAR", "ĐỨC MÁY XÚC", "TUẤN NGUYỄN"],
+    ["VĂN CHUNG <span class='ml-1 dot-red inline-flex'>+</span>", "HOÀNG DUY <span class='ml-1 dot-red inline-flex'>+</span>", "NGỌC ANH", "TÂM TÍT"],
+    ["ANH HẢI", "LOUIS", "BÙI THIỆN", "THẦY TRỊNH"],
+    ["MINH KHÔI", "LÃNH NGUYỄN", "SANG DELIMA", "HOÀNG PHẠM"]
     ];
 
 type TeamState = {
