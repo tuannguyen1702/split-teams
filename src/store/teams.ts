@@ -43,7 +43,7 @@ const data = localStorageGetItem("data")
     ["NGỌC THUẬN", "QUYỀN", "ANH THO", "ÚT NHỎ <span class='ml-1 dot-red inline-flex'>+</span>"],
     ["JACKIE DƯƠNG <span class='ml-1 dot-red inline-flex'>+</span>", "TRẦN QUANG", "VĨNH PHÚ <span class='ml-1 dot-red inline-flex'>+</span>", "LÊ KU"],
     ["ĐỈNH BÙI", "CAO PHONG <span class='ml-1 dot-red inline-flex'>+</span>", "NGỌC DŨNG/CON", "PHI HỌC"],
-    ["TUẤN PY/CON", "THÀNH NEYMAR", "ĐỨC MÁY XÚC", "TUẤN NGUYỄN"],
+    ["TUẤN PY/CON", "THÀNH NEYMAR", "TUẤN NGUYỄN", "ĐỨC MÁY XÚC"],
     ["VĂN CHUNG <span class='ml-1 dot-red inline-flex'>+</span>", "HOÀNG DUY <span class='ml-1 dot-red inline-flex'>+</span>", "NGỌC ANH", "TÂM TÍT"],
     ["ANH HẢI", "LOUIS", "BÙI THIỆN", "THẦY TRỊNH"],
     ["MINH KHÔI", "LÀNH NGUYỄN", "SANG DELIMA", "HOÀNG PHẠM"]
