@@ -96,7 +96,7 @@ async function someAsyncFunction(data: any, i: number) {
       const newRow = [];
 
       // if (dataCompare.length && i === 8) randomArr = dataCompare[3];
-      if (dataCompare.length && i === 6) randomArr = dataCompare[0];
+      // if (dataCompare.length && i === 6) randomArr = dataCompare[0];
 
       for (let j = 0; j < randomArr.length; j++) {
         const el = document.getElementById(`group-${j + 1}-name-${i + 1}`);
@@ -111,8 +111,8 @@ async function someAsyncFunction(data: any, i: number) {
 function generateUniqueRandomNumbers(min: number, max: number) {
   const uniqueNumbers: number[] = [];
 
-  while (uniqueNumbers.length < max - min + 3) {
-    const randomNumber = Math.floor(Math.random() * (max - min + 3)) + min;
+  while (uniqueNumbers.length < max - min + 1) {
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
     if (!uniqueNumbers.includes(randomNumber)) {
       uniqueNumbers.push(randomNumber);
