@@ -50,15 +50,15 @@ const data = localStorageGetItem("data")
     ["Ngọc Anh", "A Chung"],
   ["Tho", "Thuận"],
   ["Văn Lợi", "Tuấn Nguyễn"],
-  ["Quyền", "Lê Tín + Khúc Dũng"],
+  ["Quyền", "Lê Tín + Khúc Dũng <span class='ml-1 dot-blue inline-flex'>*</span>"],
   ["Quang Luân", "Lê Vũ"],
   ["Đinh Bùi", "Hoàng Duy"],
-  ["Nguyễn Thanh + Bin (con Dũng)", "Thanh Tuấn + Ken"],
+  ["Nguyễn Thanh + Bin", "Thanh Tuấn + Ken"],
   ["Phi", "Lous"],
   ["Hoàng", "Bảo Ford"],
   ["Khôi", "Thành"],
   ["Tùng Thái", "Tmthanh"],
-  ["Quang Tuấn + A Lành", "A Hải"]
+  ["Quang Tuấn + A Lành <span class='ml-1 dot-blue inline-flex'>*</span>", "A Hải"]
     ];
 
 type TeamState = {
