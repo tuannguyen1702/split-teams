@@ -73,8 +73,8 @@ type TeamState = {
 export const useTeamStore = create<TeamState>((set) => ({
   data: data,
   time: time,
-  totalTeam: 4,
-  totalTeamMember: 10,
+  totalTeam: 2,
+  totalTeamMember: 12,
   setTotalTeam: (value: number) => set({ totalTeam: value }),
   setTotalTeamMember: (value: number) => set({ totalTeamMember: value }),
 }));
