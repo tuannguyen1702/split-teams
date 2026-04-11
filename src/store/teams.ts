@@ -18,6 +18,7 @@ const data = [
   ["Nguyen Thanh", "Lê Vũ"],
   ["A Hoàng", "Quốc Bảo"],
   ["Tmthành", "Học"],
+    ["A Dung + Bin", "Tuan PY + Ken"],
   ["Thành", "Tuan Nguyen <span class='ml-1 dot-blue inline-flex'>*</span>"]
 ];
 
