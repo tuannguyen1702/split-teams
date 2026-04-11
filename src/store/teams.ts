@@ -8,15 +8,15 @@ const time = localStorageGetItem("time")
   : 0;
 
 const data = [
-  ["Anh Le Ngoc", "Nguyên Van Chung"],
+  ["Ngoc Anh", "Chung VCB"],
   ["Hải", "Tùng Thái"],
   ["Anh Tho", "Thuan Ngoc"],
   ["Lê Tín", "Nc Quyền"],
   ["Nguyễn Văn Lợi <span class='ml-1 dot-blue inline-flex'>*</span>", "Dinh Bui"],
-  ["Minh Khôi + Louis", "LukaDuy + Lanh Nguyen"],
+  ["Minh Khôi + Louis", "Duy + A Lanh"],
   ["Quang Luân", "Quang Tuấn"],
   ["Nguyen Thanh", "Lê Vũ"],
-  ["A Hoàng", "Quốc Bảo Western Ford"],
+  ["A Hoàng", "Quốc Bảo"],
   ["Tmthành", "Học"],
   ["Thành", "Tuan Nguyen <span class='ml-1 dot-blue inline-flex'>*</span>"]
 ];
