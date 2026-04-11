@@ -17,36 +17,6 @@ console.log(
 const data = localStorageGetItem("data")
   ? JSON.parse(localStorageGetItem("data") ?? '{"data": "[]"}').data
   : [
-      // ["Bình <span class='ml-1 dot-red inline-flex'>+</span>", "A Thanh  <span class='ml-1 dot-red inline-flex'>+</span>", "Quang", "A Lương"],
-      // ["A Thái  <span class='ml-1 dot-red inline-flex'>+</span>", "Chung", "Sỹ", "A Hải"],
-      // ["A Kiên", "A Vương", "Thầy Trình  <span class='ml-1 dot-red inline-flex'>+</span>", "A Tân"],
-      // ["Tuấn Nguyễn", "Nguyễn Thanh", "Đức Máy Xúc", "Thành Neymar"],
-      // ["Quyền CC", "Anh Tho  <span class='ml-1 dot-red inline-flex'>+</span>", "A Bình", "Ngọc Thuận"],
-      // ["Đỉnh Bùi", "Ngọc Dũng", "Luân TQ", "Tín Nguyễn"],
-      // ["Jackie Dương <span class='ml-1 dot-red inline-flex'>+</span>", "Tâm Tít", "Trương Phi", "Trần Quang <span class='ml-1 dot-red inline-flex'>+</span>"],
-      // ["Hiếu Thứ 3", "Anh Hải", "Thầy Trình", "Louis"],
-      // ["Chung VCB", "Ngọc Anh", "Luka Duy", "Phú Chủ Tịch"],
-      // ["Bảo Ford", "A Tân", "Bùi Thiện", "Du Ford"],
-      // ["Anh Hoàng",  "Sang Delima", "Lành Nguyễn", "--",],
-      // ["Đạt G", "Đức Máy Xúc"],
-      // ["Ngọc Anh", "Tâm Photo"],
-      // ["Bảo Nguyễn", "Bảo Ford"],
-      // ["Truyền", "Thành Naito"],
-      // ["Tuấn Phú Yên", "Philip Lam"],
-      // ["Bùi Thiện", "Thành Neymar"],
-      // ["Du Ford", "Tuấn Nguyễn"],
-      // ["Tín Nguyễn", "Dũng Xavi"],
-
-    // ["TUẤN GÒ CÔNG <span class='ml-1 dot-red inline-flex'>+</span>", "A TÂN/TOÀN <span class='ml-1 dot-blue inline-flex'>*</span>", "LÊ ĐỨC", "LUÂN TQ/LÂM ĐẠT <span class='ml-1 dot-blue inline-flex'>*</span>"],
-    // ["NGUYỄN THANH", "LINTE", "THÀNH NAITO", "TRUYỀN FORD"],
-    // ["TÍN NGUYỄN <span class='ml-1 dot-red inline-flex'>+</span>", "DU FORD", "QUỐC BẢO", "THÁI ZINDO"],
-    // ["NGỌC THUẬN", "QUYỀN", "ANH THO", "ÚT NHỎ <span class='ml-1 dot-red inline-flex'>+</span>"],
-    // ["JACKIE DƯƠNG <span class='ml-1 dot-red inline-flex'>+</span>", "TRẦN QUANG", "VĨNH PHÚ <span class='ml-1 dot-red inline-flex'>+</span>", "LÊ KU"],
-    // ["ĐỈNH BÙI", "CAO PHONG <span class='ml-1 dot-red inline-flex'>+</span>", "NGỌC DŨNG/CON <span class='ml-1 dot-blue inline-flex'>*</span>", "PHI HỌC"],
-    // ["TUẤN PY/CON <span class='ml-1 dot-blue inline-flex'>*</span>", "THÀNH NEYMAR", "TUẤN NGUYỄN", "ĐỨC MÁY XÚC"],
-    // ["VĂN CHUNG <span class='ml-1 dot-red inline-flex'>+</span>", "HOÀNG DUY <span class='ml-1 dot-red inline-flex'>+</span>", "NGỌC ANH", "TÂM TÍT"],
-    // ["ANH HẢI", "LOUIS", "BÙI THIỆN", "THẦY TRÌNH"],
-    // ["MINH KHÔI", "LÀNH NGUYỄN", "SANG DELIMA", "HOÀNG [
   ["Anh Le Ngoc", "Nguyên Van Chung"],
   ["Hải", "Tùng Thái"],
   ["Anh Tho", "Thuan Ngoc"],
@@ -56,7 +26,7 @@ const data = localStorageGetItem("data")
   ["Quang Luân", "Quang Tuấn"],
   ["Nguyen Thanh", "Lê Vũ"],
   ["A Hoàng", "Quốc Bảo Western Ford"],
-  ["Tmthành", "Học Moonlight Parkview"],
+  ["Tmthành", "Học"],
   ["Thành", "Tuan Nguyen <span class='ml-1 dot-blue inline-flex'>*</span>"]
 ];
 
