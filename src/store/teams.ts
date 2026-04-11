@@ -46,20 +46,19 @@ const data = localStorageGetItem("data")
     // ["TUẤN PY/CON <span class='ml-1 dot-blue inline-flex'>*</span>", "THÀNH NEYMAR", "TUẤN NGUYỄN", "ĐỨC MÁY XÚC"],
     // ["VĂN CHUNG <span class='ml-1 dot-red inline-flex'>+</span>", "HOÀNG DUY <span class='ml-1 dot-red inline-flex'>+</span>", "NGỌC ANH", "TÂM TÍT"],
     // ["ANH HẢI", "LOUIS", "BÙI THIỆN", "THẦY TRÌNH"],
-    // ["MINH KHÔI", "LÀNH NGUYỄN", "SANG DELIMA", "HOÀNG PHẠM"]
-    ["Ngọc Anh", "A Chung"],
-  ["Tho", "Thuận"],
-  ["Văn Lợi", "Tuấn Nguyễn"],
-  ["Quyền", "Lê Tín + Khúc Dũng <span class='ml-1 dot-blue inline-flex'>*</span>"],
-  ["Quang Luân", "Lê Vũ"],
-  ["Đinh Bùi", "Hoàng Duy"],
-  ["Nguyễn Thanh + Bin", "Thanh Tuấn + Ken"],
-  ["Phi", "Lous"],
-  ["Hoàng", "Bảo Ford"],
-  ["Khôi", "Thành"],
-  ["Tùng Thái", "Tmthanh"],
-  ["Quang Tuấn + A Lành <span class='ml-1 dot-blue inline-flex'>*</span>", "A Hải"]
-    ];
+    // ["MINH KHÔI", "LÀNH NGUYỄN", "SANG DELIMA", "HOÀNG [
+  ["Anh Le Ngoc", "Nguyên Van Chung"],
+  ["Hải", "Tùng Thái"],
+  ["Anh Tho", "Thuan Ngoc"],
+  ["Lê Tín", "Nc Quyền"],
+  ["Nguyễn Văn Lợi <span class='ml-1 dot-blue inline-flex'>*</span>", "Dinh Bui"],
+  ["Minh Khôi + Louis", "LukaDuy + Lanh Nguyen"],
+  ["Quang Luân", "Quang Tuấn"],
+  ["Nguyen Thanh", "Lê Vũ"],
+  ["A Hoàng", "Quốc Bảo Western Ford"],
+  ["Tmthành", "Học Moonlight Parkview"],
+  ["Thành", "Tuan Nguyen <span class='ml-1 dot-blue inline-flex'>*</span>"]
+];
 
 type TeamState = {
   data: any;
