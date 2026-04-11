@@ -7,16 +7,7 @@ const time = localStorageGetItem("time")
   ? parseInt(localStorageGetItem("time") ?? "0")
   : 0;
 
-console.log(
-  `localStorageGetItem("data")`,
-  localStorageGetItem("data")
-    ? JSON.parse(localStorageGetItem("data"))?.data
-    : []
-);
-
-const data = localStorageGetItem("data")
-  ? JSON.parse(localStorageGetItem("data") ?? '{"data": "[]"}').data
-  : [
+const data = [
   ["Anh Le Ngoc", "Nguyên Van Chung"],
   ["Hải", "Tùng Thái"],
   ["Anh Tho", "Thuan Ngoc"],
