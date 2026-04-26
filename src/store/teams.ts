@@ -9,7 +9,7 @@ const time = localStorageGetItem("time")
 
 const data = [
 
-  ["Quang <span class='ml-1 dot-blue inline-flex'>*</span>", "Lương <span class='ml-1 dot-blue inline-flex'>*</span>"],
+  ["Quang <span class='ml-1 dot-blue inline-flex'>*</span>", "Lương <span class='ml-1 dot-blue inline-flex'>*</span>", "Bình"],
   ["Sỹ", "Thái <span class='ml-1 dot-blue inline-flex'>*</span>", "Cang <span class='ml-1 dot-blue inline-flex'>*</span>"],
   ["Hải", "Vương","Tân"],
 
