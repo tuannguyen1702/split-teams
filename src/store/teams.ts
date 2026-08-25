@@ -64,9 +64,9 @@ const data = [
   ],
   [
     "Lanh Nguyen",
-    "Lã Nguyen Thành Sang",
-    "Thầy Trình-trí Việt-ielts Master",
-    "A Hoàng MPFC"
+    "Sang Delima",
+    "Thầy Trình",
+    "A Hoàng"
   ],
   [
     "Trần Đào",
