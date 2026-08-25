@@ -71,7 +71,7 @@ export default function Home() {
         Danh sách gốc
       </h1>
       <div className="flex-1 z-10 pb-4 md:pt-4 text-left">
-        <div className={`z-10 pt-4  mt-2 grid text-center md:w-full grid-cols-2 md:grid-cols-[repeat(var(--team-columns), minmax(0, 1fr))] md:text-left gap-x-4 gap-y-8`} style={
+        <div className={`z-10 pt-4  mt-2 grid text-center md:w-full grid-cols-2 md:[grid-template-columns:repeat(var(--team-columns),minmax(0,1fr))] md:text-left gap-x-4 gap-y-8`} style={
           {
             "--team-columns": totalTeam,
           } as React.CSSProperties
