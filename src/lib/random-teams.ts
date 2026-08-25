@@ -97,7 +97,7 @@ async function someAsyncFunction(data: any, i: number) {
 
       if (dataCompare.length && (i === 2 || i === 4 || i === 6 || i === 8)) randomArr = dataCompare[0];
 
-      if (dataCompare.length && i === 9 && i % 2 === 0) randomArr = dataCompare[0];
+      if (dataCompare.length && i === 9 && i % 2 === 0) randomArr = dataCompare[6];
       // if (dataCompare.length && i === 6) randomArr = dataCompare[0];
 
       for (let j = 0; j < randomArr.length; j++) {
