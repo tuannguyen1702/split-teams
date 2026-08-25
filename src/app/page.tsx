@@ -71,7 +71,11 @@ export default function Home() {
         Danh sách gốc
       </h1>
       <div className="flex-1 z-10 pb-4 md:pt-4 text-left">
-        <div className={`z-10 pt-4  mt-2 grid text-center md:w-full grid-cols-2 md:grid-cols-${totalTeam} md:text-left gap-x-4 gap-y-8`}>
+        <div className={`z-10 pt-4  mt-2 grid text-center md:w-full grid-cols-2 md:grid-cols-[var(--team-columns)] md:text-left gap-x-4 gap-y-8`} style={
+          {
+            "--team-columns": totalTeam,
+          } as React.CSSProperties
+        }>
           {Array.from(Array(totalTeam).keys()).map((team) => (
             <div key={team}>
               <div
