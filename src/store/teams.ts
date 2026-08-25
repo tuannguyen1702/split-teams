@@ -22,7 +22,7 @@ const data = [
   ],
   [
     "Trịnh Thành",
-    "Huynh Thanh Tuan + Ken <span class='ml-1 dot-blue inline-flex'>+</span><span class='ml-1 dot-red inline-flex'>*</span>",
+    "Tuan PY + Ken <span class='ml-1 dot-blue inline-flex'>+</span>",
     "Tâm Tít",
     "Caophong Nguyen",
   ],
@@ -36,7 +36,7 @@ const data = [
     "Thái Bùi",
     "Tuan Nguyen",
     "Lâm Đạt",
-    "------ <span class='ml-1 dot-red inline-flex'>*</span>"
+    "------"
   ],
   [
     "Anh Tho",
@@ -52,9 +52,9 @@ const data = [
   ],
   [
     "Võ Văn Vương",
-    "------ <span class='ml-1 dot-red inline-flex'>*</span>",
+    "------",
     "Tin Nguyen",
-    "Khúc Ngọc Dũng + Bin <span class='ml-1 dot-blue inline-flex'>+</span><span class='ml-1 dot-red inline-flex'>*</span>"
+    "Dũng Xavi + Bin <span class='ml-1 dot-blue inline-flex'>+</span>"
   ],
   [
     "Anh Lê Ngọc",
