@@ -24,7 +24,7 @@ const data = [
     "Trịnh Thành",
     "Caophong Nguyen",
     "Tâm Tít",
-    "Huynh Thanh Tuan + Ken <span class='ml-1 dot-blue inline-flex'>*</span>"
+    "Huynh Thanh Tuan + Ken <span class='ml-1 dot-blue inline-flex'>+</span><span class='ml-1 dot-red inline-flex'>*</span>"
   ],
   [
     "Du Nguyễn",
@@ -35,14 +35,14 @@ const data = [
   [
     "Thái Bùi",
     "Tuan Nguyen",
-    "------",
+    "------ <span class='ml-1 dot-red inline-flex'>*</span>",
     "Lâm Đạt"
   ],
   [
     "Anh Tho",
     "Nc Quyền",
     "Thuan Ngoc",
-    "Jackie Dương <span class='ml-1 dot-blue inline-flex'>*</span>"
+    "Jackie Dương <span class='ml-1 dot-blue inline-flex'>+</span>"
   ],
   [
     "Nguyễn Văn Lợi",
@@ -52,15 +52,15 @@ const data = [
   ],
   [
     "Võ Văn Vương",
-    "------",
+    "------ <span class='ml-1 dot-red inline-flex'>*</span>",
     "Tin Nguyen",
-    "Khúc Ngọc Dũng + Bin <span class='ml-1 dot-blue inline-flex'>*</span>"
+    "Khúc Ngọc Dũng + Bin <span class='ml-1 dot-blue inline-flex'>+</span><span class='ml-1 dot-red inline-flex'>*</span>"
   ],
   [
     "Anh Lê Ngọc",
     "Anh Chung VCB",
     "Hoàng Duy",
-    "Út Nhỏ <span class='ml-1 dot-blue inline-flex'>*</span>"
+    "Út Nhỏ <span class='ml-1 dot-blue inline-flex'>+</span>"
   ],
   [
     "Lanh Nguyen",
