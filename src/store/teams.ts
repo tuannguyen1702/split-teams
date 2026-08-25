@@ -10,43 +10,43 @@ const time = localStorageGetItem("time")
 const data = [
   [
     "Quang Tuấn",
-    "Thủ môn bạn Bin",
+    "TM Bạn Bin",
     "Quang Luân",
     "TM - NEW"
   ],
   [
     "Lê Ku",
-    "Nguyễn Thành",
+    "Thanh Bình Điền",
     "Lê Tín",
     "Ford Truyền"
   ],
   [
     "Trịnh Thành",
-    "Tuan PY + Ken <span class='ml-1 dot-blue inline-flex'>+</span>",
+    "Tuấn PY + Ken <span class='ml-1 dot-blue inline-flex'>+</span>",
     "Tâm Tít",
-    "Phong Nguyen",
+    "Phong Nguyễn",
   ],
   [
     "Du Nguyễn",
     "Bùi Thiện",
-    "Nguyễn Minh Khôi",
+    "Minh Khôi",
     "Nguyễn Đàn"
   ],
   [
     "Thái Bùi",
-    "Tuan Nguyen",
+    "Tuấn Nguyễn",
     "Lâm Đạt",
     "------"
   ],
   [
     "Anh Tho",
     "Nc Quyền",
-    "Thuan Ngoc",
+    "Thuận Ngọc",
     "Jackie Dương <span class='ml-1 dot-blue inline-flex'>+</span>"
   ],
   [
-    "Anh Lê Ngọc",
-    "Anh Chung VCB",
+    "Ngọc Anh",
+    "Chung VCB",
     "Út Nhỏ <span class='ml-1 dot-blue inline-flex'>+</span>",
     "Hoàng Duy",
   ],
@@ -59,11 +59,11 @@ const data = [
   [
     "Võ Văn Vương",
     "------",
-    "Tin Nguyen",
+    "Tín Nguyễn",
     "Dũng Xavi + Bin <span class='ml-1 dot-blue inline-flex'>+</span>"
   ],
   [
-    "Lanh Nguyen",
+    "Lành Nguyễn",
     "Sang Delima",
     "Thầy Trình",
     "A Hoàng"
