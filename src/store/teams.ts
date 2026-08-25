@@ -24,7 +24,7 @@ const data = [
     "Trịnh Thành",
     "Tuan PY + Ken <span class='ml-1 dot-blue inline-flex'>+</span>",
     "Tâm Tít",
-    "Caophong Nguyen",
+    "Phong Nguyen",
   ],
   [
     "Du Nguyễn",
@@ -47,8 +47,8 @@ const data = [
   [
     "Anh Lê Ngọc",
     "Anh Chung VCB",
+    "Út Nhỏ <span class='ml-1 dot-blue inline-flex'>+</span>",
     "Hoàng Duy",
-    "Út Nhỏ <span class='ml-1 dot-blue inline-flex'>+</span>"
   ],
   [
     "Nguyễn Văn Lợi",
