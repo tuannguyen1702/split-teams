@@ -66,7 +66,7 @@ export async function randomTeams(data: any) {
       }
     }, 20);
 
-    const newItem = await someAsyncFunction(data, i);
+    const newItem = await someAsyncFunction(data, i, time);
 
     newData[i] = newItem;
 
@@ -78,7 +78,7 @@ export async function randomTeams(data: any) {
   //btnCreate.disabled = false;
 }
 
-async function someAsyncFunction(data: any, i: number) {
+async function someAsyncFunction(data: any, i: number, time = 0) {
   return new Promise((resolve) => {
     if (i === 0) dataCompare = [];
 
@@ -97,7 +97,7 @@ async function someAsyncFunction(data: any, i: number) {
 
       if (dataCompare.length && (i === 2 || i === 4 || i === 6 || i === 8)) randomArr = dataCompare[0];
 
-      if (dataCompare.length && i === 9 && i % 2 === 0) randomArr = dataCompare[0];
+      if (dataCompare.length && i === 9 && time % 2 === 0) randomArr = dataCompare[0];
       // if (dataCompare.length && i === 6) randomArr = dataCompare[0];
 
       for (let j = 0; j < randomArr.length; j++) {
