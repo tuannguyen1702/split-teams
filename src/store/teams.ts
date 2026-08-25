@@ -10,54 +10,68 @@ const time = localStorageGetItem("time")
 const data = [
   [
     "Quang Tuấn",
-    "Lê Ku",
-    "Trịnh Thành",
-    "Du Nguyễn",
-    "Thái Bùi",
-    "Anh Tho",
-    "Nguyễn Văn Lợi",
-    "Võ Văn Vương",
-    "Anh Lê Ngọc",
-    "Lanh Nguyen",
-    "Trần Đào"
-  ],
-  [
     "Quang Luân",
-    "Nguyễn Thành",
-    "Caophong Nguyen",
-    "Bùi Thiện",
-    "Tuan Nguyen",
-    "Nc Quyền",
-    "Phùng Vĩnh Phú",
-    "------",
-    "Anh Chung VCB",
-    "Lã Nguyen Thành Sang",
-    "Anh Hải SV"
-  ],
-  [
     "Thủ môn bạn Bin",
-    "Lê Tín",
-    "Tâm Tít",
-    "Nguyễn Minh Khôi",
-    "------",
-    "Thuan Ngoc",
-    "Trần Quang",
-    "Tin Nguyen",
-    "Hoàng Duy",
-    "Thầy Trình-trí Việt-ielts Master",
-    "Louis"
+    "TM - NEW"
   ],
   [
-    "TM - NEW",
-    "Ford Truyền",
-    "Huynh Thanh Tuan + Ken <span class='ml-1 dot-blue inline-flex'>*</span>",
-    "Nguyễn Đàn",
-    "Lâm Đạt",
-    "Jackie Dương <span class='ml-1 dot-blue inline-flex'>*</span>",
-    "Đinh Bùi",
-    "Khúc Ngọc Dũng + Bin <span class='ml-1 dot-blue inline-flex'>*</span>",
-    "Út Nhỏ <span class='ml-1 dot-blue inline-flex'>*</span>",
-    "A Hoàng MPFC",
+    "Lê Ku",
+    "Nguyễn Thành",
+    "Lê Tín",
+    "Ford Truyền"
+  ],
+  [
+    "Trịnh Thành",
+    "Caophong Nguyen",
+    "Tâm Tít",
+    "Huynh Thanh Tuan + Ken <span class='ml-1 dot-blue inline-flex'>*</span>"
+  ],
+  [
+    "Du Nguyễn",
+    "Bùi Thiện",
+    "Nguyễn Minh Khôi",
+    "Nguyễn Đàn"
+  ],
+  [
+    "Thái Bùi",
+    "Tuan Nguyen",
+    "------",
+    "Lâm Đạt"
+  ],
+  [
+    "Anh Tho",
+    "Nc Quyền",
+    "Thuan Ngoc",
+    "Jackie Dương <span class='ml-1 dot-blue inline-flex'>*</span>"
+  ],
+  [
+    "Nguyễn Văn Lợi",
+    "Phùng Vĩnh Phú",
+    "Trần Quang",
+    "Đinh Bùi"
+  ],
+  [
+    "Võ Văn Vương",
+    "------",
+    "Tin Nguyen",
+    "Khúc Ngọc Dũng + Bin <span class='ml-1 dot-blue inline-flex'>*</span>"
+  ],
+  [
+    "Anh Lê Ngọc",
+    "Anh Chung VCB",
+    "Hoàng Duy",
+    "Út Nhỏ <span class='ml-1 dot-blue inline-flex'>*</span>"
+  ],
+  [
+    "Lanh Nguyen",
+    "Lã Nguyen Thành Sang",
+    "Thầy Trình-trí Việt-ielts Master",
+    "A Hoàng MPFC"
+  ],
+  [
+    "Trần Đào",
+    "Anh Hải SV",
+    "Louis",
     "Thành Neymar"
   ]
 ];
@@ -74,8 +88,8 @@ type TeamState = {
 export const useTeamStore = create<TeamState>((set) => ({
   data: data,
   time: time,
-  totalTeam: 3,
-  totalTeamMember: 10,
+  totalTeam: 4,
+  totalTeamMember: 11,
   setTotalTeam: (value: number) => set({ totalTeam: value }),
   setTotalTeamMember: (value: number) => set({ totalTeamMember: value }),
 }));
