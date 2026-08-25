@@ -59,7 +59,7 @@ const data = [
     "Út Nhỏ <span class='ml-1 dot-blue inline-flex'>*</span>",
     'A Hoàng MPFC',
     'Thành Neymar',
-  ],
+  ]
 ];
 
 type TeamState = {
