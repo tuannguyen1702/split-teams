@@ -69,7 +69,7 @@ const data = [
     "A Hoàng"
   ],
   [
-    "Trần Đào",
+    "Tân Đào",
     "Anh Hải SV",
     "Louis",
     "Thành Neymar"
