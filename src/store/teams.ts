@@ -45,6 +45,12 @@ const data = [
     "Jackie Dương <span class='ml-1 dot-blue inline-flex'>+</span>"
   ],
   [
+    "Anh Lê Ngọc",
+    "Anh Chung VCB",
+    "Hoàng Duy",
+    "Út Nhỏ <span class='ml-1 dot-blue inline-flex'>+</span>"
+  ],
+  [
     "Nguyễn Văn Lợi",
     "Phùng Vĩnh Phú",
     "Trần Quang",
@@ -55,12 +61,6 @@ const data = [
     "------",
     "Tin Nguyen",
     "Dũng Xavi + Bin <span class='ml-1 dot-blue inline-flex'>+</span>"
-  ],
-  [
-    "Anh Lê Ngọc",
-    "Anh Chung VCB",
-    "Hoàng Duy",
-    "Út Nhỏ <span class='ml-1 dot-blue inline-flex'>+</span>"
   ],
   [
     "Lanh Nguyen",
