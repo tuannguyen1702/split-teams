@@ -19,7 +19,7 @@ const data = [
     'Võ Văn Vương',
     'Anh Lê Ngọc',
     'Lanh Nguyen',
-    'Trần Đào',
+    'Trần Đào'
   ],
   [
     'Quang Luân',
@@ -32,7 +32,7 @@ const data = [
     '------',
     'Anh Chung VCB',
     'Lã Nguyen Thành Sang',
-    'Anh Hải SV',
+    'Anh Hải SV'
   ],
   [
     'Thủ môn bạn Bin',
@@ -45,7 +45,7 @@ const data = [
     'Tin Nguyen',
     'Hoàng Duy',
     'Thầy Trình-trí Việt-ielts Master',
-    'Louis',
+    'Louis'
   ],
   [
     'TM - NEW',
@@ -58,7 +58,7 @@ const data = [
     "Khúc Ngọc Dũng + Bin <span class='ml-1 dot-blue inline-flex'>*</span>",
     "Út Nhỏ <span class='ml-1 dot-blue inline-flex'>*</span>",
     'A Hoàng MPFC',
-    'Thành Neymar',
+    'Thành Neymar'
   ]
 ];
 
