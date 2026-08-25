@@ -95,7 +95,7 @@ async function someAsyncFunction(data: any, i: number) {
     setTimeout(() => {
       const newRow = [];
 
-      if (dataCompare.length && (i === 2 || i === 4 || i === 6 || i === 8 || i === 9) randomArr = dataCompare[0];
+      if (dataCompare.length && (i === 2 || i === 4 || i === 6 || i === 8 || i === 9)) randomArr = dataCompare[0];
       // if (dataCompare.length && i === 6) randomArr = dataCompare[0];
 
       for (let j = 0; j < randomArr.length; j++) {
