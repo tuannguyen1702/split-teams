@@ -10,8 +10,8 @@ const time = localStorageGetItem("time")
 const data = [
   [
     "Quang Tuấn",
-    "Quang Luân",
     "Thủ môn bạn Bin",
+    "Quang Luân",
     "TM - NEW"
   ],
   [
